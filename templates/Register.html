@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Covid Room finder</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/Register.css') }}">
+</head>
+<body>
+<div class="container">
+  <div class ="header">
+    <h1>Create Account </h1>
+  </div>
+
+  <form class ="form" id="form" action = "/" method="post">
+    <div class="form-control">
+      <label> Name </label>
+      <input type="text" placeholder="Alic charls" id="name" name = "name">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message </small>
+    </div>
+
+
+    <div class="form-control">
+      <label> Username </label>
+      <input type="text" placeholder="alic" id="username" name="username">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message </small>
+    </div>
+
+
+    <div class="form-control">
+      <label> Email </label>
+      <input type="email" placeholder="hgfiuhfr@aw.com" id="email" name="email">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message </small>
+    </div>
+
+
+    <div class="form-control">
+      <label> Password </label>
+      <input type="password" placeholder="asdf" id="password" name="password">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message </small>
+    </div>
+
+    <div class="form-control">
+      <label> Password two </label>
+      <input type="password" placeholder="asdf" id="password2">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message </small>
+    </div>
+      <button>Submit</button>
+            <p><h6>If you already have an account then <a href="{{ url_for('login')}}"><b>click here</b></a> and login to your account </h6></p>
+  </form>
+</div>
+</body>
+</html>

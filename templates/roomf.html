@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Covid Room finder</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='stylesheets/capacity.css') }}">
+</head>
+<body>
+<div class="container">
+  <div class ="header">
+    <h1>Booking working place </h1>
+  </div>
+
+      <form class ="form" id="form">
+    <div class="form-control">
+      <label> Room </label>
+
+  <select id="cars" name="cars">
+    <option value="Office 1  ">Office 1</option>
+    <option value="Office 2  ">Office 2</option>
+    <option value="Office 3  ">Office 3</option>
+      <option value="Big office ">Big office</option>
+      <option value="Boss office">Boss office</option>
+    <option value="Additional office">Additional office</option>
+  </select>
+
+    </div>
+
+     <form class ="form" id="form">
+    <div class="form-control">
+      <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+    </div>
+
+    <form class ="form" id="form">
+        <div class="form-control">
+            <label> Your name </label>
+            <input type="text" placeholder="alic" id="username">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message </small>
+        </div>
+
+      <button>BOOK</button>
+
+  </form>
+    <div class ="header">
+    <h1>Get capacity </h1>
+  </div>
+   <form class ="form" id="form">
+    <div class="form-control">
+      <label for="date">Date:</label>
+        <input type="date" id="date" name="date">  <button>Get capacity</button>
+    </div>
+
+
+
+  </form>
+
+
+</div>
+</body>
+</html>

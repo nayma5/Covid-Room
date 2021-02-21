@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Covid Room finder</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='stylesheets/Register.css') }}">
+</head>
+<body>
+<div class="container">
+  <div class ="header">
+    <h1>Login </h1>
+  </div>
+    <form class ="form" id="form" action = "/login" method="post">
+    <div class="form-control">
+      <label> Username </label>
+      <input type="text" placeholder="alic" id="username" name="username">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message </small>
+    </div>
+
+    <div class="form-control">
+      <label> Password </label>
+      <input type="password" placeholder="asdf" id="password" name="password">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message </small>
+    </div>
+
+      <button>Submit</button>
+          <p><h6>If you do not have any account then <a href="{{ url_for('register') }}">click here</a> and create a new account</h6></p>
+  </form>
+
+
+</div>
+</body>
+</html>
